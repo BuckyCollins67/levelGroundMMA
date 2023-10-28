@@ -55,16 +55,33 @@ nav a, footer a {
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
-#navLeft, #navCenter, #navRight {
+#navLeft {
+    grid-column: 1;
     display: flex;
-    align-items: center; /* vertically aligns items in the middle */
+    justify-content: left;
+    align-items: center;
+}
+
+#navCenter {
+    grid-column: 2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navRight {
+    grid-column: 3;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 #navLeft li, #navCenter li, #navRight li {
@@ -97,7 +114,12 @@ button {
 }
 
 .services {
-    width: 60%;
+    color: aliceblue;
+    background-image: url('photo03.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 200px;
+    height: 80vh;
     display: flex;
     justify-content: space-between;
 }
