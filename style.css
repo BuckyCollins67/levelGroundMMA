@@ -1,0 +1,134 @@
+/* font and sizes */
+html, body {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem; /* Approximately 29.12px */
+}
+
+h2 {
+    font-size: calc(29.12px / 1.618); /* Approximately 18px, which is our base */
+}
+
+h3 {
+    font-size: calc(18px / 1.618); /* Approximately 11.12px */
+}
+
+h4 {
+    font-size: calc(11.12px / 1.618); /* Approximately 6.88px; This is small for a heading, so you might adjust manually */
+}
+
+h5 {
+    /* For h5 and h6, you might set a minimum font size or adjust manually to ensure readability. */
+    font-size: 6px; 
+}
+
+h6 {
+    font-size: 5px; 
+}
+
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+body, p, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav ul, footer ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a, footer a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#navLeft, #navCenter, #navRight {
+    display: flex;
+    align-items: center; /* vertically aligns items in the middle */
+}
+
+#navLeft li, #navCenter li, #navRight li {
+    margin: 0 10px; /* Adjust as needed */
+}
+
+#navCenter li a img {
+    display: block;
+    /* example dimensions, adjust as needed */
+    width: 50px;
+    height: auto;
+}
+
+.hero {
+    color: aliceblue;
+    background-image: url('heroImage.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 200px;
+    height: 80vh;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.services {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    width: 48%; /* Adjust as needed */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.why {
+    color: aliceblue;
+    background-image: url('photo01.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 200px;
+    height: 80vh;
+
+}
+
+.volunteer {
+    color: aliceblue;
+    background-image: url('photo02.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 200px;
+    height: 80vh;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #000;
+    color: #fff;
+}
