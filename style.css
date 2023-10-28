@@ -157,8 +157,9 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
-    /* Adjust body font size for smaller screens */
+    /* Adjust body font size for smaller screens (phones) */
     html, body {
+        width: auto;
         font-size: 16px;
     }
     
@@ -203,14 +204,33 @@ footer {
         margin: 0 5px;
     }
 
+    #navCenter {
+        display: flex;
+        justify-content: center;
+    }
+
+    #navLeft {
+        display: none;
+
+    }
+
     /* Services box */
     .services {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
         flex-direction: column;
+        padding: 0;
     }
 
     .service {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 95%;
         margin-bottom: 20px;
+        justify-content: center;
     }
 
     /* For button */
